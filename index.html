@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+</head>
+<body>
+    <!-- Image of the Milky Way over Two Jack Lake -->
+    <img id="hoverImage" src="https://imageio.forbes.com/specials-images/imageserve/5f285681289af0e7316b841b/The-Milky-Way-in-all-of-its-glory-over-Two-Jack-Lake-in-Banff-National-Park--Alberta/960x0.jpg?format=jpg&width=1440" 
+    alt="Milky Way over Two Jack Lake" width="600" height="400">
+
+    <script>
+        // Select the image element using JavaScript
+        const img = document.getElementById('hoverImage');
+
+        // Hide image when mouse is over it
+        img.onmouseover = function() {
+            img.style.visibility = 'hidden'; // This makes the image disappear
+        };
+
+        // Show image again when mouse is out
+        img.onmouseout = function() {
+            img.style.visibility = 'visible'; // This makes the image reappear
+        };
+    </script>
+</body>
+</html>
